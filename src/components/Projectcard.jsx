@@ -14,22 +14,18 @@ function ProjectCard(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
-          View
-        </Button>
-
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-
-            {"Demo"}
-          </Button>
-        )}
+        <div className="d-flex justify-content-between">
+          {props.demoLink && (
+            <Button className="viewbtn" variant="primary" href={props.demoLink} target="_blank">
+              Demo
+            </Button>
+          )}
+          {props.ghLink && (
+            <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
+              GitHub
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

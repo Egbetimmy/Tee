@@ -32,6 +32,7 @@ function Projectlist() {
                 title="Olx-Clone"
                 description="Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks."
                 ghLink="https://olx-clone-rahul.netlify.app/"
+                demoLink="https://olx-clone-rahul.netlify.app/" //
               />
             </Col>
 
