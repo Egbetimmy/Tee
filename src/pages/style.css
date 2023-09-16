@@ -70,7 +70,7 @@
   opacity: 0.9 !important;
 }
 .logo {
-  background-image: url(../assets/logor.png);
+  background-image: url(../assets/logo3.png);
   background-size: cover;
   width: 90px;
   height: 80px;
@@ -214,7 +214,7 @@
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../assets/Web-designer-1024x821.webp);
+  background-image: url(../assets/images/pic2.png);
   background-size: cover;
   background-position: center;
 }
@@ -332,7 +332,7 @@
 .webimage {
   max-width: 500px;
   height: 350px;
-  background-image: url(../assets/web-removebg-preview.png);
+  background-image: url(../assets/images/pic1.png);
   background-size: cover;
   background-position: center;
 }
@@ -370,6 +370,8 @@
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  min-height: 300px;
+  flex-grow: 1;
 }
 .card-text{
   font-family: 'Poppins';
@@ -382,7 +384,7 @@
   border: transparent;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  /* height: 100% !important;*/
   border-radius: 15px;
 }
 .project-card-view:hover {
@@ -507,3 +509,77 @@
   width: 60px;
   height: 50px;
 }
+
+
+/* CSS for showing the description */
+.show {
+  display: block;
+}
+
+/* CSS for hiding the description */
+.hide {
+  display: none;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center align the buttons horizontally */
+  gap: 10px; /* Add some spacing between buttons */
+  margin-top: 10px; /* Adjust spacing as needed */
+}
+
+
+/* ContactForm.css */
+
+/* Customize the modal dialog */
+.modal-dialog {
+  max-width: 500px;
+}
+
+/* Customize the modal content */
+.modal-content {
+  border: 2px solid #c850c0; /* Example border color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Customize the modal header */
+.modal-header {
+  background-color: #c850c0; /* Example header background color */
+  color: #fff; /* Example header text color */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Customize the modal body */
+.modal-body {
+  padding: 20px;
+  background-color: #c850c0;
+}
+
+/* Customize the modal footer */
+.modal-footer {
+  justify-content: center; /* Center align the buttons */
+  background-color: #c850c0;
+}
+
+/* Customize the Close button */
+.modal-header .close {
+  color: #fff; /* Example close button text color */
+  font-size: 24px;
+}
+
+/* Customize the Send Message button */
+.modal-footer .btn-primary {
+  background-color: #c850c0; /* Example primary button background color */
+  border: none;
+}
+
+/* Customize the Close button */
+.modal-footer .btn-secondary {
+  background-color: #c850c0; /* Example secondary button background color */
+  border: none;
+}
+
+/* Add more styles as needed */
