@@ -1,10 +1,22 @@
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
+import { useState } from "react";
 import "../pages/style.css";
+import ContactForm from "./ContactForm"; // Import your ContactForm component
 
 function Contactpage() {
+  const [showContactForm, setShowContactForm] = useState(false);
+
+  const handleContactFormShow = () => {
+    setShowContactForm(true);
+  };
+
+  const handleContactFormClose = () => {
+    setShowContactForm(false);
+  };
+
   return (
     <div className="contactbackground">
-      <Container>
+      <Container className="d-flex flex-column align-items-center">
         <h2 className="contacthead">Get In Touch</h2>
         <p className="contactpara">
           I’m currently searching for opportunities for a front-end developer
@@ -12,20 +24,20 @@ function Contactpage() {
           <br /> you have any further questions or just want to say hi, <br />
           I’ll try my best to get back to you!
         </p>
-        <button
+        <Button
           className="contactbtn"
-          onClick={() => {
-            window.open("https://www.instagram.com/rahulvijay81/");
-          }}
+          onClick={handleContactFormShow}
         >
-          Say Hello
-        </button>
+          Contact Me
+        </Button>
+        <ContactForm show={showContactForm} onHide={handleContactFormClose} />
+
         <span></span>
+
         <p className="copyright">
           © Copyright 2023
-          <hr />
-          Designed & Built by <span>rahulvijay</span>
         </p>
+        <hr />
       </Container>
     </div>
   );

@@ -12,10 +12,10 @@ function Aboutpage() {
                 <Row className='textbackground'>
                     <Col md={7} >
                         <h3 className='aboutmetext'>About <span>Me</span></h3>
-                        <p className='aboutdetails'> Professional data analyst with more than 2 years of experience gathering, organizing, 
-                        analyzing, and distributing various kinds of statistical data. Active presenter and assured communicator with the 
-                        capacity to disseminate knowledge in a way that is useful to end users. creative in coming up with fixes and deciding 
-                        on changes to ensure the best possible use of organizational data.
+                        <p className='aboutdetails'> Professional data analyst with more than 2 years of experience gathering, organizing,
+                            analyzing, and distributing various kinds of statistical data. Active presenter and assured communicator with the
+                            capacity to disseminate knowledge in a way that is useful to end users. creative in coming up with fixes and deciding
+                            on changes to ensure the best possible use of organizational data.
                         </p>
                         <div className="skillsContainer">
                             <div className="skill--scroll">
