@@ -84,12 +84,12 @@ function Projectlist() {
         <Container>
           <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
             <div className="task-buttons" style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-              <Button onClick={() => setSelectedTask(null)}>All</Button>
-              <Button onClick={() => setSelectedTask('Dashboard')}>Dashboard</Button>
-              <Button onClick={() => setSelectedTask('Data Analysis')}>Data Analysis</Button>
-              <Button onClick={() => setSelectedTask('Data Science')}>Data Science</Button>
-              <Button onClick={() => setSelectedTask('Frontend')}>Frontend</Button>
-              <Button onClick={() => setSelectedTask('Backend')}>Backend</Button>
+              <Button onClick={() => setSelectedTask(null)} style={{ marginRight: '10px' }}>All</Button>
+              <Button onClick={() => setSelectedTask('Dashboard')} style={{ marginRight: '10px' }}>Dashboard</Button>
+              <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
+              <Button onClick={() => setSelectedTask('Data Science')} style={{ marginRight: '10px' }}>Data Science</Button>
+              <Button onClick={() => setSelectedTask('Frontend')} style={{ marginRight: '10px' }}>Frontend</Button>
+              <Button onClick={() => setSelectedTask('Backend')} style={{ marginRight: '10px' }}>Backend</Button>
               {/* Add buttons for other tasks as needed */}
             </div>
           </Row>
