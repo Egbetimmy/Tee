@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProjectCard from '../components/Projectcard';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import grocerystore from '/src/Assets/images/grocery-store.jpg';
-import olximage from '/src/Assets/images/olximage.jpg';
+import planner from '/src/Assets/images/planner-app.jpg';
 import gfil from '../Assets/images/gfil.jpg';
 import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
@@ -22,14 +22,14 @@ const projectsData = [
     task: 'Web Development',
   },
   {
-    imgPath: olximage,
+    imgPath: planner,
     isBlog: false,
-    title: 'Olx-Clone',
+    title: 'Planner App',
     description:
-      'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
-    ghLink: 'https://olx-clone-rahul.netlify.app/',
-    demoLink: 'https://grocery-store-app.vercel.app/',
-    tags: ['React', 'Frontend', 'TMDB API'],
+      'Your planner app is a versatile tool built with React, designed to help users efficiently plan their day. It offers a range of widgets, including a calendar for scheduling, reminders for important tasks, a stopwatch for time management, and a weather widget to stay informed about current conditions. This app simplifies daily planning and organization, providing users with a user-friendly interface to set plans and reminders, making it a valuable addition to their productivity toolbox.',
+    ghLink: 'https://github.com/Egbetimmy/planner-app.git',
+    demoLink: 'https://tee-planner-app.web.app',
+    tags: ['React'],
     task: 'Data Analysis',
   },
   {
