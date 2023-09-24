@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/Projectcard';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import adminpanel from '/src/Assets/images/adminpanel.jpg';
+import grocerystore from '/src/Assets/images/grocery-store.jpg';
 import olximage from '/src/Assets/images/olximage.jpg';
-import gfil from '/src/Assets/images/gfil.png';
+import gfil from '../Assets/images/gfil.jpg';
 import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
 import todolist from '/src/Assets/images/todolist.jpg';
@@ -11,14 +11,15 @@ import '../pages/style.css';
 
 const projectsData = [
   {
-    imgPath: adminpanel,
+    imgPath: grocerystore,
     isBlog: false,
-    title: 'Dashboard Panel',
+    title: 'Grocery Store',
     description:
-      'User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.',
-    ghLink: 'https://rahul-dashboard-pannel.netlify.app',
-    tags: ['React', 'Frontend', 'TMDB API'],
-    task: 'Dashboard',
+      "This web project is a grocery store management system with three main screens: the 'Order View' where customers can place orders for products, the 'Product Display' screen to showcase available products, and a 'Manager Dashboard' for updating and adding products to the store's inventory. This system utilizes Python Flask for server-side functionality, MySQL for database management, and basic HTML, CSS, and JavaScript for the user interface. Customers can conveniently order products, specifying quantities in kilograms or individual units, making it a seamless and efficient solution for managing grocery store operations.",
+    ghLink: 'https://github.com/Egbetimmy/Grocery-store-app.git',
+    demoLink: 'https://grocery-store-app.vercel.app/',
+    tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Flask'],
+    task: 'Web Development',
   },
   {
     imgPath: olximage,
@@ -27,19 +28,19 @@ const projectsData = [
     description:
       'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
     ghLink: 'https://olx-clone-rahul.netlify.app/',
-    demoLink: 'https://olx-clone-rahul.netlify.app/',
+    demoLink: 'https://grocery-store-app.vercel.app/',
     tags: ['React', 'Frontend', 'TMDB API'],
     task: 'Data Analysis',
   },
   {
     imgPath: gfil,
     isBlog: false,
-    title: 'Netflix-Clone',
+    title: 'Great Field Industry',
     description:
-      'This project is a simplified front-end clone of Netflix. It was created with React js. It uses TMDB (The Movie Data Base) API and uses the Axios tool. Users can click movie images with embedded YouTube trailers or related videos about the movie.',
-    ghLink: 'https://react-netflixweb-clone.netlify.app/',
-    tags: ['React', 'Frontend', 'TMDB API'],
-    task: 'Data Science',
+      "This is a web project i worked on while still an Intern at FriendZone, it serves as a comprehensive portfolio site for an oil and gas servicing company, featuring several key sections: a dynamic homepage that introduces the company, an 'About Us' page providing detailed information about the organization, a 'Services' page outlining the range of services offered, a 'Blog' section for updates, announcements, and industry insights, a 'Going Green' page showcasing the company's sustainability efforts, and a 'Contact Us' page for easy communication. The site serves as a valuable resource to highlight the company's achievements, certifications, and its physical location, offering visitors a comprehensive overview of the company's expertise and values.",
+    demoLink: 'http://greatfieldindustriesltd.com/gfil/index.html',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    task: 'Web Development',
   },
   {
     imgPath: gridlinesbuilders,
