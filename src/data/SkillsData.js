@@ -1,6 +1,7 @@
 export const skillsData = [
     'HTML',
     'CSS',
+    'csharp',
     'Javascript',
     'React',
     'AWS',
@@ -24,5 +25,5 @@ export const skillsData = [
     'Firebase',
     'Nginx',
     'OpenCV',
-    'Typescript',
+    // 'Typescript',
 ]

@@ -27,6 +27,7 @@ import numpy from '../Assets/svg/skills/numpy.svg'
 import opencv from '../Assets/svg/skills/opencv.svg'
 import pytorch from '../Assets/svg/skills/pytorch.svg'
 import tensorflow from '../Assets/svg/skills/tensorflow.svg'
+import csharp from '../Assets/svg/skills/csharp.svg'
 
 import azure from '../Assets/svg/skills/azure.svg'
 import flutter from '../Assets/svg/skills/flutter.svg'
@@ -47,6 +48,8 @@ export const skillsImage = (skill) => {
             return photoshop;
         case 'docker':
             return docker;
+        case 'csharp':
+            return csharp;
         case 'nodejs':
             return nodejs;
         case 'postman':
