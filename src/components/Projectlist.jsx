@@ -45,11 +45,11 @@ const projectsData = [
   {
     imgPath: gridlinesbuilders,
     isBlog: false,
-    title: 'Grid Line Builders',
+    title: 'Eventsng',
     description:
-      'Grid line builders is a static webpage built with HTML, CSS, and JavaScript. Users can see images of their work and contact information that helps to connect the home builders through a webpage. webpage builds responsive to multiple sizes of devices.',
-    ghLink: 'https://gridlinesbuilders.in/',
-    tags: ['React', 'Frontend', 'TMDB API'],
+      'This platform serves as an event booking site, providing event planners with the opportunity to showcase their events. Prospective attendees can easily browse, discover, and book events online through this user-friendly platform.',
+    demoLink: 'https://eventsng.net/',
+    tags: ['HTML', 'CSS', 'PHP'],
     task: 'Frontend',
   },
   {
