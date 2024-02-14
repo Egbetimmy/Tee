@@ -100,11 +100,12 @@ function Projectlist() {
   const filteredProjects = projectsData.filter((project) => !selectedTask || project.task === selectedTask);
 
   return (
+    
     <div className="projectbackground" style={{ minHeight: '100vh', backgroundColor: '#f0f0f0' }}>
       <Container fluid className="project-section">
         <Container>
           <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-            <div className="task-buttons" style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+            <div className="task-buttons" style={{ justifyContent: 'center', paddingBottom: '10px', marginTop: '40px' }}>
               <Button onClick={() => setSelectedTask(null)} style={{ marginRight: '10px' }}>All</Button>
               <Button onClick={() => setSelectedTask('Dashboard')} style={{ marginRight: '10px' }}>Dashboard</Button>
               <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
