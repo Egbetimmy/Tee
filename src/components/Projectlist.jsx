@@ -90,7 +90,7 @@ const projectsData = [
     tags: ['React', 'Frontend', 'TMDB API'],
     task: 'Backend',
   },
-  // Add other project data here...
+  // Add other project data here
 ];
 
 function Projectlist() {
