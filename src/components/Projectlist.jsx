@@ -8,6 +8,7 @@ import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
 import todolist from '/src/Assets/images/todolist.jpg';
 import shortfall from '/src/Assets/images/shortfall.jpg';
+import recommendation from '/src/Assets/images/recommendation.png';
 import '../pages/style.css';
 
 const projectsData = [
@@ -73,13 +74,13 @@ const projectsData = [
   },
   
   {
-    imgPath: todolist,
+    imgPath: recommendation,
     isBlog: false,
-    title: 'To Do List',
-    description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
-    ghLink: 'https://todolist-rahul81.netlify.app/',
-    tags: ['React', 'Frontend', 'TMDB API'],
-    task: 'Backend',
+    title: 'Movie Recommendation System',
+    description: 'The primary goal of this task within the Unsupervised Predict is to be aware of (and ultimately competent in handling) the complexities associated with deploying recommender algorithms in a live environment. These algorithms are resource heavy - requiring high amounts of memory and processing power when associated with larger data sources. As such, we\'ll need to research and determine the modifications required to deploy this app so that it produces appropriate recommendations with as little latency as possible.',
+    ghLink: 'https://github.com/Egbetimmy/UNSUPERVISED-PREDICT-STREAMLIT-2301AC_ES3-TeamSMART',
+    tags: ['Python'],
+    task: 'Data Science',
   },
   
   {
@@ -111,7 +112,7 @@ function Projectlist() {
               <Button onClick={() => setSelectedTask('Dashboard')} style={{ marginRight: '10px' }}>Dashboard</Button>
               <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
               <Button onClick={() => setSelectedTask('Data Science')} style={{ marginRight: '10px' }}>Data Science</Button>
-              <Button onClick={() => setSelectedTask('Frontend')} style={{ marginRight: '10px' }}>Frontend</Button>
+              {/*<Button onClick={() => setSelectedTask('Frontend')} style={{ marginRight: '10px' }}>Frontend</Button>*/}
               <Button onClick={() => setSelectedTask('Backend')} style={{ marginRight: '10px' }}>Backend</Button>
               {/* Add buttons for other tasks as needed */}
             </div>
