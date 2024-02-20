@@ -45,23 +45,33 @@ function ProjectCard(props) {
             GitHub
           </Button>
         )}
+        {props.view && (
+          <Button
+            className="viewbtn"
+            variant="primary"
+            href={props.view}
+            target="_blank"
+          >
+            View
+          </Button>
+        )}
       </div>
 
 
       {/* Display tags in the footer */}
       {props.tags && (
-        <div className="tags, text-center mb-3">
-          {props.tags.map((tag, index) => (
-            <Badge
-              key={index}
-              pill
-              style={{ marginRight: '5px', marginBottom: '5px' }}
-              variant="primary"
-            >
-              {tag}
-            </Badge>
-          ))}
-        </div>
+      <div className="tags text-center mb-3">
+        {props.tags.map((tag, index) => (
+          <Badge
+            key={index}
+            pill
+            style={{ marginRight: '5px', marginBottom: '5px', backgroundColor: 'transparent' }}
+            variant="primary"
+          >
+            {tag}
+          </Badge>
+        ))}
+      </div>
       )}
     </Card>
   );
