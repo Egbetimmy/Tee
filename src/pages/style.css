@@ -87,7 +87,10 @@
 }
 
 .nav-link:hover {
-  color: #191919 !important;
+  color: #ffffff !important;
+  background-color: rgba(241, 235, 235, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  opacity: 0.8;
 }
 .resumebtn {
   width: 150px;
@@ -96,7 +99,7 @@
   padding: 0 20px !important;
   background-color: #4158d0;
   color: #e8e8e8 !important;
-  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
+  background-image: linear-gradient(43deg, #1637df 0%, #1e1505 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
   border: none !important;
 }
@@ -144,9 +147,9 @@
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
+    #1637df 0%,
+    #4d1549 46%,
+    #1e1505 100%
   );
 }
 .row {
@@ -189,24 +192,24 @@
 }
 .Typewriter__wrapper {
   font-size: 2em !important;
-  color: #191919 !important;
+  color: #f2eaea !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #191919 !important;
+  color: #ece4e4 !important;
 }
 .headtext {
   padding-top: 120px;
   font-size: 2.4em !important;
-  color: #191919 !important;
+  color: #ebe3e3 !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
 .nametext {
   font-size: 2em !important;
-  color: #191919 !important;
+  color: #e9e2e2 !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
@@ -220,6 +223,7 @@
 }
 .socailmediabtn {
   margin-top: 2rem;
+  color: #e8e8e8 !important;
   width: 90px;
   height: 50px;
   background-color: transparent;
@@ -227,7 +231,7 @@
   border-radius: 5px;
 }
 .socailmediabtn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(241, 235, 235, 0.2);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
   opacity: 0.8;
 }
@@ -276,9 +280,9 @@
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
+    #1637df 0%,
+    #4d1549 46%,
+    #1e1505 100%
   );
   padding-top: 110px;
 }
@@ -293,7 +297,7 @@
 }
 .aboutmetext {
   font-size: 2em !important;
-  color: #191919 !important;
+  color: #f1eeee !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
@@ -313,15 +317,18 @@
 }
 .aboutdetails {
   font-size: 1.1em !important;
+  color: #e8e8e8 !important;
   font-family: 'Poppins';
 }
 .skilllist li {
   letter-spacing: 1px;
+  color: #e8e8e8 !important;
   font-family: 'Poppins';
 }
 .skilllist {
   font-weight: 600;
   list-style-type: none;
+  color: #e8e8e8 !important;
   font-family: 'Poppins';
 }
 .skilllist li:hover {
@@ -355,9 +362,9 @@
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
+    #1637df 0%,
+    #4d1549 46%,
+    #1e1505 100%
   );
 }
 .project-section {
@@ -379,7 +386,7 @@
 .project-card-view {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
-  color: #191919 !important;
+  color: #ffffff !important;
   background-color: transparent !important;
   border: transparent;
   opacity: 0.9 !important;
@@ -403,15 +410,28 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  color: #e8e8e8 !important;
+  background-color: transparent;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  font-family: 'Poppins' !important;
+}
+
+.tags {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #e8e8e8 !important;
+  background-color: transparent;
   font-size: 18px !important;
   letter-spacing: 1px;
   font-family: 'Poppins' !important;
 }
 
 .btn-primary {
-  color: #191919 !important;
+  color: #ffffff !important;
   background-color: transparent !important;
-  border-color: #191919 !important;
+  border-color: #ffffff !important;
 }
 
 .btn-primary:hover {
@@ -439,15 +459,16 @@
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
+    #1637df 0%,
+    #4d1549 46%,
+    #1e1505 100%
   );
   padding-top: 110px;
 }
 .contacthead {
   padding-top: 3rem;
   text-align: center;
+  color: #e8e8e8 !important;
   font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -455,6 +476,7 @@
 .contactpara {
   padding-top: 1rem;
   text-align: center;
+  color: #e8e8e8 !important;
   font-size: 16px;
   letter-spacing: 1px;
   padding-bottom: 1rem;
@@ -476,6 +498,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  color: #e8e8e8 !important;
   right: 0;
   text-align: center;
   font-size: 12px;

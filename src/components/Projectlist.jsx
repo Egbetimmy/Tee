@@ -7,8 +7,11 @@ import gfil from '../Assets/images/gfil.jpg';
 import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
 import todolist from '/src/Assets/images/todolist.jpg';
+import spill from '/src/Assets/images/Ogoni-Oil-Spill.jpg';
 import shortfall from '/src/Assets/images/shortfall.jpg';
+import clean from '/src/Assets/images/clean.jpg';
 import recommendation from '/src/Assets/images/recommendation.png';
+import clockin from '/src/Assets/images/time-clock.png';
 import '../pages/style.css';
 
 const projectsData = [
@@ -64,13 +67,33 @@ const projectsData = [
     task: 'Backend',
   },
   {
-    imgPath: todolist,
+    imgPath: spill,
     isBlog: false,
-    title: 'To Do List',
+    title: 'Data Analysis with Python',
     description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
-    ghLink: 'https://todolist-rahul81.netlify.app/',
-    tags: ['React', 'Frontend', 'TMDB API'],
-    task: 'Backend',
+    view: 'https://medium.com/@egbetiimmy/exploratory-data-analysis-of-niger-delta-spill-data-673524a57955',
+    tags: ['Python'],
+    task: 'Data Analysis',
+  },
+  
+  {
+    imgPath: spill,
+    isBlog: false,
+    title: 'Customer Analysis',
+    description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
+    view: 'https://public.tableau.com/app/profile/egbe.timmy/viz/CustomerAnalysis_16675062924670/Dashboard1#1',
+    tags: ['Tableau'],
+    task: 'Data Analysis',
+  },
+  
+  {
+    imgPath: clean,
+    isBlog: false,
+    title: 'Data cleaning with Python',
+    description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
+    ghLink: 'https://link.medium.com/zLln2XkwNub',
+    tags: ['Python'],
+    task: 'Data Analysis',
   },
   
   {
@@ -83,6 +106,15 @@ const projectsData = [
     task: 'Data Science',
   },
   
+  {
+    imgPath: clockin,
+    isBlog: false,
+    title: 'Clocl-In System',
+    description: 'Charlestown pizza is a static website completely build with bootstrap with fully responsive.',
+    ghLink: 'https://github.com/Egbetimmy/clock-in-system',
+    tags: ['NodeJS'],
+    task: 'Backend',
+  },
   {
     imgPath: shortfall,
     isBlog: false,
@@ -106,8 +138,8 @@ function Projectlist() {
     <div className="projectbackground" style={{ minHeight: '100vh', backgroundColor: '#f0f0f0' }}>
       <Container fluid className="project-section">
         <Container>
-          <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-            <div className="task-buttons" style={{ justifyContent: 'center', paddingBottom: '10px', marginTop: '40px' }}>
+          <Row style={{ paddingBottom: '10px' }}>
+            <div className="task-buttons" style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '10px', marginTop: '40px' }}>
               <Button onClick={() => setSelectedTask(null)} style={{ marginRight: '10px' }}>All</Button>
               <Button onClick={() => setSelectedTask('Dashboard')} style={{ marginRight: '10px' }}>Dashboard</Button>
               <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
@@ -128,6 +160,7 @@ function Projectlist() {
                   ghLink={project.ghLink}
                   demoLink={project.demoLink}
                   tags={project.tags}
+                  view={project.view}
                 />
               </Col>
             ))}
