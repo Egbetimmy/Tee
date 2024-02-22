@@ -7,10 +7,14 @@ import gfil from '../Assets/images/gfil.jpg';
 import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
 import todolist from '/src/Assets/images/todolist.jpg';
+import customer from '/src/Assets/images/customer.jpg';
 import spill from '/src/Assets/images/Ogoni-Oil-Spill.jpg';
 import shortfall from '/src/Assets/images/shortfall.jpg';
+import deliveryapp from '/src/Assets/images/Delivery-App.jpg';
 import clean from '/src/Assets/images/clean.jpg';
 import recommendation from '/src/Assets/images/recommendation.png';
+import loan from '/src/Assets/images/loan.jpg';
+import weatherprediction from '/src/Assets/images/weather_and_prediction.png';
 import clockin from '/src/Assets/images/time-clock.png';
 import '../pages/style.css';
 
@@ -23,9 +27,21 @@ const projectsData = [
       "This web project is a grocery store management system with three main screens: the 'Order View' where customers can place orders for products, the 'Product Display' screen to showcase available products, and a 'Manager Dashboard' for updating and adding products to the store's inventory. This system utilizes Python Flask for server-side functionality, MySQL for database management, and basic HTML, CSS, and JavaScript for the user interface. Customers can conveniently order products, specifying quantities in kilograms or individual units, making it a seamless and efficient solution for managing grocery store operations.",
     ghLink: 'https://github.com/Egbetimmy/Grocery-store-app.git',
     demoLink: 'https://grocery-store-app.vercel.app/',
-    tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Flask'],
-    task: 'Web Development',
+    tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Python'],
+    task: 'BackEnd', //'FrontEnd',
   },
+
+  {
+    imgPath: loan,
+    isBlog: false,
+    title: 'Loan Api',
+    description:
+      'Your planner app is a versatile tool built with React, designed to help users efficiently plan their day. It offers a range of widgets, including a calendar for scheduling, reminders for important tasks, a stopwatch for time management, and a weather widget to stay informed about current conditions. This app simplifies daily planning and organization, providing users with a user-friendly interface to set plans and reminders, making it a valuable addition to their productivity toolbox.',
+    ghLink: 'https://github.com/jeckdix/loanApi',
+    tags: ['C#'],
+    task: 'BackEnd',
+  },
+  
   {
     imgPath: planner,
     isBlog: false,
@@ -35,8 +51,9 @@ const projectsData = [
     ghLink: 'https://github.com/Egbetimmy/planner-app.git',
     demoLink: 'https://tee-planner-app.web.app',
     tags: ['React'],
-    task: 'Data Analysis',
+    task: 'FrontEnd',
   },
+
   {
     imgPath: gfil,
     isBlog: false,
@@ -47,6 +64,7 @@ const projectsData = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     task: 'Web Development',
   },
+
   {
     imgPath: gridlinesbuilders,
     isBlog: false,
@@ -57,6 +75,7 @@ const projectsData = [
     tags: ['HTML', 'CSS', 'PHP'],
     task: 'Frontend',
   },
+
   {
     imgPath: friendzone,
     isBlog: false,
@@ -66,6 +85,7 @@ const projectsData = [
     tags: ['React', 'Frontend', 'TMDB API'],
     task: 'Backend',
   },
+
   {
     imgPath: spill,
     isBlog: false,
@@ -77,7 +97,7 @@ const projectsData = [
   },
   
   {
-    imgPath: spill,
+    imgPath: customer,
     isBlog: false,
     title: 'Customer Analysis',
     description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
@@ -91,7 +111,7 @@ const projectsData = [
     isBlog: false,
     title: 'Data cleaning with Python',
     description: 'To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done.',
-    ghLink: 'https://link.medium.com/zLln2XkwNub',
+    view: 'https://link.medium.com/zLln2XkwNub',
     tags: ['Python'],
     task: 'Data Analysis',
   },
@@ -115,6 +135,18 @@ const projectsData = [
     tags: ['NodeJS'],
     task: 'Backend',
   },
+
+  {
+    imgPath: weatherprediction,
+    isBlog: false,
+    title: 'Weather Prediction',
+    description: 'Charlestown pizza is a static website completely build with bootstrap with fully responsive.',
+    ghLink: 'https://github.com/EddyEjembi/Weather-Prediction-Project',
+    demoLink: 'https://weather-prediction.streamlit.app',
+    tags: ['Python'],
+    task: 'Data Science',
+  },
+
   {
     imgPath: shortfall,
     isBlog: false,
@@ -123,6 +155,16 @@ const projectsData = [
     ghLink: 'https://github.com/Egbetimmy/RR14-Advanced-Regression',
     tags: ['Python'],
     task: 'Data Science',
+  },
+
+  {
+    imgPath: deliveryapp,
+    isBlog: false,
+    title: 'Delivery App',
+    description: 'Charlestown pizza is a static website completely build with bootstrap with fully responsive.',
+    ghLink: 'https://github.com/Patutechz/delivery-app/tree/main/api',
+    tags: ['NodeJS'],
+    task: 'Backend',
   },
   // Add other project data here
 ];
@@ -141,7 +183,7 @@ function Projectlist() {
           <Row style={{ paddingBottom: '10px' }}>
             <div className="task-buttons" style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '10px', marginTop: '40px' }}>
               <Button onClick={() => setSelectedTask(null)} style={{ marginRight: '10px' }}>All</Button>
-              <Button onClick={() => setSelectedTask('Dashboard')} style={{ marginRight: '10px' }}>Dashboard</Button>
+              <Button onClick={() => setSelectedTask('FrontEnd')} style={{ marginRight: '10px' }}>FrontEnd</Button>
               <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
               <Button onClick={() => setSelectedTask('Data Science')} style={{ marginRight: '10px' }}>Data Science</Button>
               {/*<Button onClick={() => setSelectedTask('Frontend')} style={{ marginRight: '10px' }}>Frontend</Button>*/}
