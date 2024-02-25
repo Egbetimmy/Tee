@@ -57,22 +57,26 @@ function ProjectCard(props) {
         )}
       </div>
 
-
       {/* Display tags in the footer */}
       {props.tags && (
       <div className="tags text-center mb-3">
         {props.tags.map((tag, index) => (
-          <Badge
+          <span
             key={index}
-            pill
-            style={{ marginRight: '5px', marginBottom: '5px', backgroundColor: 'transparent' }}
-            variant="primary"
+            className="tag"
+            style={{ 
+              marginRight: '2px', 
+              marginBottom: '5px', 
+              backgroundColor: 'transparent', 
+              padding: '3px 5px', 
+              borderRadius: '0px' 
+            }}
           >
             {tag}
-          </Badge>
+          </span>
         ))}
       </div>
-      )}
+    )}
     </Card>
   );
 }
