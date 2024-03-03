@@ -6,7 +6,6 @@ import planner from '/src/Assets/images/planner-app.jpg';
 import gfil from '../Assets/images/gfil.jpg';
 import gridlinesbuilders from '/src/Assets/images/Gridlinesbuilders.jpg';
 import friendzone from '/src/Assets/images/friendzone.png';
-import todolist from '/src/Assets/images/todolist.jpg';
 import customer from '/src/Assets/images/customer.jpg';
 import spill from '/src/Assets/images/Ogoni-Oil-Spill.jpg';
 import shortfall from '/src/Assets/images/shortfall.jpg';
@@ -29,7 +28,7 @@ const projectsData = [
     ghLink: 'https://github.com/Egbetimmy/Grocery-store-app.git',
     demoLink: 'https://grocery-store-app.vercel.app/',
     tags: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Python'],
-    task: 'BackEnd', //'FrontEnd',
+    task: 'Backend', //'FrontEnd',
   },
 
   {
@@ -40,7 +39,7 @@ const projectsData = [
       'Your planner app is a versatile tool built with React, designed to help users efficiently plan their day. It offers a range of widgets, including a calendar for scheduling, reminders for important tasks, a stopwatch for time management, and a weather widget to stay informed about current conditions. This app simplifies daily planning and organization, providing users with a user-friendly interface to set plans and reminders, making it a valuable addition to their productivity toolbox.',
     ghLink: 'https://github.com/jeckdix/loanApi',
     tags: ['C#'],
-    task: 'BackEnd',
+    task: 'Backend',
   },
   
   {
@@ -63,7 +62,7 @@ const projectsData = [
       "This is a web project i worked on while still an Intern at FriendZone, it serves as a comprehensive portfolio site for an oil and gas servicing company, featuring several key sections: a dynamic homepage that introduces the company, an 'About Us' page providing detailed information about the organization, a 'Services' page outlining the range of services offered, a 'Blog' section for updates, announcements, and industry insights, a 'Going Green' page showcasing the company's sustainability efforts, and a 'Contact Us' page for easy communication. The site serves as a valuable resource to highlight the company's achievements, certifications, and its physical location, offering visitors a comprehensive overview of the company's expertise and values.",
     demoLink: 'http://greatfieldindustriesltd.com/gfil/index.html',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    task: 'Web Development',
+    task: 'FrontEnd',
   },
 
   {
@@ -74,16 +73,16 @@ const projectsData = [
       'This platform serves as an event booking site, providing event planners with the opportunity to showcase their events. Prospective attendees can easily browse, discover, and book events online through this user-friendly platform.',
     demoLink: 'https://eventsng.net/',
     tags: ['HTML', 'CSS', 'PHP'],
-    task: 'Frontend',
+    task: 'FrontEnd',
   },
 
   {
     imgPath: friendzone,
     isBlog: false,
-    title: 'Charlestown Pizza',
-    description: 'Charlestown pizza is a static website completely build with bootstrap with fully responsive.',
-    ghLink: 'https://rahulvijay81.github.io/Pizzastore-bootstrap/',
-    tags: ['React', 'Frontend', 'TMDB API'],
+    title: 'FriendZone',
+    description: 'Friendzone is a Social Networking Platform. With our new feature, user can posts, photos, forums and earn while been active.',
+    demoLink: 'https://friendzone.com.ng/welcome',
+    tags: ['React', 'PHP'],
     task: 'Backend',
   },
 
@@ -197,7 +196,6 @@ function Projectlist() {
               <Button onClick={() => setSelectedTask('FrontEnd')} style={{ marginRight: '10px' }}>FrontEnd</Button>
               <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
               <Button onClick={() => setSelectedTask('Data Science')} style={{ marginRight: '10px' }}>Data Science</Button>
-              {/*<Button onClick={() => setSelectedTask('Frontend')} style={{ marginRight: '10px' }}>Frontend</Button>*/}
               <Button onClick={() => setSelectedTask('Backend')} style={{ marginRight: '10px' }}>Backend</Button>
               {/* Add buttons for other tasks as needed */}
             </div>
