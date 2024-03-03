@@ -14,6 +14,7 @@ import deliveryapp from '/src/Assets/images/Delivery-App.jpg';
 import clean from '/src/Assets/images/clean.jpg';
 import recommendation from '/src/Assets/images/recommendation.png';
 import loan from '/src/Assets/images/loan.jpg';
+import lang from '/src/Assets/images/lang.jpg';
 import weatherprediction from '/src/Assets/images/weather_and_prediction.png';
 import clockin from '/src/Assets/images/time-clock.png';
 import '../pages/style.css';
@@ -165,6 +166,16 @@ const projectsData = [
     ghLink: 'https://github.com/Patutechz/delivery-app/tree/main/api',
     tags: ['NodeJS'],
     task: 'Backend',
+  },
+
+  {
+    imgPath: lang,
+    isBlog: false,
+    title: 'Language Detector',
+    description: 'Charlestown pizza is a static website completely build with bootstrap with fully responsive.',
+    ghLink: 'https://github.com/Patutechz/delivery-app/tree/main/api',
+    tags: ['Python'],
+    task: 'Data Science',
   },
   // Add other project data here
 ];
