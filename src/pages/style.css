@@ -307,6 +307,21 @@
   color: #fff;
   animation: vibrate 30ms linear infinite forwards;
 }
+
+.education-list {
+  font-size: 1em !important;
+  color: #f1eeee !important;
+  font-weight: 100 !important;
+  letter-spacing: 1px !important;
+}
+
+.work-experience-list {
+  font-size: 1em !important;
+  color: #f1eeee !important;
+  font-weight: 100 !important;
+  letter-spacing: 1px !important;
+}
+
 @keyframes vibrate {
   0% {
     transform: translateX(-1px) translateY(1px);
@@ -343,6 +358,23 @@
   background-size: cover;
   background-position: center;
 }
+
+.webimage2 {
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../Assets/images/picture2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.webimage3 {
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../Assets/images/background3.png);
+  background-size: cover;
+  background-position: center;
+}
+
 @media (max-width: 767px) {
   .aboutpagebackground {
     width: 100%;
