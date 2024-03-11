@@ -145,6 +145,6 @@ function Aboutpage() {
             </Container>
         </div >
     )
-}
+} 
 
 export default Aboutpage
