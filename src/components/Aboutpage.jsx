@@ -6,10 +6,17 @@ import "../pages/style.css";
 
 const workexperience = [
     {
+    role: "Backend Developer",
+    location: "Lagos, Nigeria",
+    company: "ALAT By Wema",
+    timeline: { "from": "September 2023", "to": "Present" },
+    summary: "• Develop and maintain .Net based backend systems for web applications and APIs; \n• Collaborate with front-end developers and project managers to identify technical requirements and deliver on-time solutions; \n• Successfully deployed a Kubernetes cluster on AWS for a high-traffic web application, resulting in 99.9% uptime and reducing costs by 25%; \n• Build and maintain databases using MsSQL to store and retrieve data; \n• Create unit and integration tests to ensure system stability and performance; \n• Optimize code performance by identifying bottlenecks and implementing efficient algorithms; \n● Developed a RESTful API that reduced the latency of data retrieval by 50% and improved overall system performance",
+  },
+    {
       role: "Backend Developer",
       location: "Warri, Nigeria",
       company: "FriendZone.",
-      timeline: { "from": "July 2022", "to": "Present" },
+      timeline: { "from": "July 2022", "to": "August 2023" },
       summary: "• Develop and maintain Python-based backend systems for web applications and APIs using Flask and Django frameworks; \n• Collaborate with front-end developers and project managers to identify technical requirements and deliver on-time solutions; \n• Successfully deployed a Kubernetes cluster on AWS for a high-traffic web application, resulting in 99.9% uptime and reducing costs by 25%; \n• Build and maintain databases using PostgreSQL and MySQLto store and retrieve data; \n• Create unit and integration tests using Pytest and Selenium to ensure system stability and performance; \n• Optimize code performance by identifying bottlenecks and implementing efficient algorithms; \n● Developed a RESTful API that reduced the latency of data retrieval by 50% and improved overall system performance",
     },
     {
