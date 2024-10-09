@@ -20,7 +20,7 @@ const Cursor = () => {
     width: '16px',
     height: '16px',
     borderRadius: '50%',
-    backgroundColor: 'rgba(25, 25, 25, 0.5)',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
     pointerEvents: 'none',
     zIndex: 9999,
     transform: `translate(${cursorPosition.x - 8}px, ${cursorPosition.y - 8}px)`,

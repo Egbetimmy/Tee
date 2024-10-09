@@ -104,6 +104,18 @@
   border: none !important;
 }
 
+/* Hover Effect */
+.resumebtn:hover {
+  background-image: linear-gradient(43deg, #1e1505 0%, #1637df 100%); /* Reverse gradient */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Active State */
+.resumebtn:active {
+  transform: translateY(1px); /* Press effect */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 5px; /* Reduce shadow on press */
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 0rem !important;
@@ -582,6 +594,16 @@
   justify-content: center; /* Center align the buttons horizontally */
   gap: 10px; /* Add some spacing between buttons */
   margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.task-button {
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.task-button:hover {
+  background-color: #007BFF; /* Change to desired color */
+  color: white; /* Change text color on hover */
 }
 
 
