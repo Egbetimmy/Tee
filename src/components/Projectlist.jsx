@@ -192,11 +192,11 @@ function Projectlist() {
         <Container>
           <Row style={{ paddingBottom: '10px' }}>
             <div className="task-buttons" style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '10px', marginTop: '40px' }}>
-              <Button onClick={() => setSelectedTask(null)} style={{ marginRight: '10px' }}>All</Button>
-              <Button onClick={() => setSelectedTask('FrontEnd')} style={{ marginRight: '10px' }}>FrontEnd</Button>
-              <Button onClick={() => setSelectedTask('Data Analysis')} style={{ marginRight: '10px' }}>Data Analysis</Button>
-              <Button onClick={() => setSelectedTask('Data Science')} style={{ marginRight: '10px' }}>Data Science</Button>
-              <Button onClick={() => setSelectedTask('Backend')} style={{ marginRight: '10px' }}>Backend</Button>
+              <Button onClick={() => setSelectedTask(null)} className="resumebtn" style={{ marginRight: '10px' }}>All</Button>
+              <Button onClick={() => setSelectedTask('FrontEnd')} className="resumebtn" style={{ marginRight: '10px' }}>FrontEnd</Button>
+              <Button onClick={() => setSelectedTask('Data Analysis')} className="resumebtn" style={{ marginRight: '10px' }}>Data Analysis</Button>
+              <Button onClick={() => setSelectedTask('Data Science')} className="resumebtn" style={{ marginRight: '10px' }}>Data Science</Button>
+              <Button onClick={() => setSelectedTask('Backend')} className="resumebtn" style={{ marginRight: '10px' }}>Backend</Button>
               {/* Add buttons for other tasks as needed */}
             </div>
           </Row>

@@ -128,7 +128,7 @@ function ContactForm({ show, onHide }) {
         <Button variant="secondary" onClick={onHide}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleSubmit}>
+        <Button variant="secondary" onClick={handleSubmit}>
           Send Message
         </Button>
       </Modal.Footer>

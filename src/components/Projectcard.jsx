@@ -27,7 +27,7 @@ function ProjectCard(props) {
       <div style={{ textAlign: 'center', marginBottom: '20px' }} className="button-container">
         {props.demoLink && (
           <Button
-            className="viewbtn"
+            className="resumebtn"
             variant="primary"
             href={props.demoLink}
             target="_blank"
@@ -37,7 +37,7 @@ function ProjectCard(props) {
         )}
         {props.ghLink && (
           <Button
-            className="viewbtn"
+            className="resumebtn"
             variant="primary"
             href={props.ghLink}
             target="_blank"
@@ -47,7 +47,7 @@ function ProjectCard(props) {
         )}
         {props.view && (
           <Button
-            className="viewbtn"
+            className="resumebtn"
             variant="primary"
             href={props.view}
             target="_blank"

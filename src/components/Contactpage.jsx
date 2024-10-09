@@ -19,13 +19,14 @@ function Contactpage() {
       <Container className="d-flex flex-column align-items-center">
         <h2 className="contacthead">Get In Touch</h2>
         <p className="contactpara">
-          I’m currently searching for opportunities for a Backend developer
-          role. <br /> If there is any vacancy my inbox is always open. Whether
-          <br /> you have any further questions or just want to say hi, <br />
-          I’ll try my best to get back to you!
+          I am actively seeking opportunities for a Software Engineering role. 
+          <br/>If you have any vacancies available, please feel free to reach out—I’m always open to discussions! 
+          <br/>Whether you have questions or simply want to connect, I will do my best to respond promptly. 
+          <br/>Thank you for considering me!
         </p>
+
         <Button
-          className="contactbtn"
+          className="resumebtn"
           onClick={handleContactFormShow}
         >
           Contact Me
